@@ -10,10 +10,10 @@
 {{ if isset .Params "toc" }}
   <ul class="sidebar-nav motion-element">
     <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-      {{ i18n "ToC" }}
+      Table of Contents <br>
     </li>
     <li class="sidebar-nav-overview" data-target="site-overview">
-      {{ i18n "SiteInfo" }}
+      Site Information <br>
     </li>
   </ul>
 {{ end }}
@@ -23,7 +23,6 @@
       {{ partial "sidebar/rss.html" . }}
       {{ partial "sidebar/social.html" . }}
       {{ partial "sidebar/link.html" . }}
-      <!-- {{ partial "sidebar/stats.html" . }} -->
     </section>
     {{ partial "sidebar/toc.html" . }}
   </div>
