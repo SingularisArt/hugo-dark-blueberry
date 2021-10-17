@@ -8,7 +8,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #8a8a8a;
-  background-color: #4A4B4D;
+  background-color: #1a191e;
   margin: 0;
 }
 
@@ -157,7 +157,7 @@ a, a:visited,  a:hover, a:active {
 }
 
 a:hover {
-	color: #900;
+  color: #CC6666;
 }
 
 a.before:before, a.after:after {
@@ -180,7 +180,7 @@ a.before:before, a.after:after {
   height:5px;
   height:0.1rem;
   width:0;
-  background:#900;
+  background: #CC6666;
 }
 
 a.center:after {
@@ -267,8 +267,11 @@ img {
 
 blockquote {
   padding: 0 15px;
-  color: #666;
-  border-left: 4px solid #ddd;
+  color: #555;
+  border-left: 4px solid #CC6666;
+  font-style: italic;
+  font-weight: bolder;
+  background: #222;
 }
 
 blockquote cite::before {
@@ -507,11 +510,11 @@ dd {
   box-sizing: border-box;
   width: 240px;
   color: #555;
-  background: #231F20;
+  background-color: #1a191e;
 }
 
 .sidebar-inner.affix {
-  background-color: #231F20;
+  background-color: #1a191e;
   position: fixed;
   top: 0;
 }
@@ -833,7 +836,7 @@ pre, .highlight {
 
 .main {
   padding-bottom: 150px;
-  background-color: #4A4B4D;
+  background-color: #1a191e;
 }
 
 .main-inner {
@@ -950,6 +953,148 @@ pre, .highlight {
 /**************************
 * FOOTER FINISHED EDITING *
 ***************************/
+
+/**************************
+* DETAILS STARTED EDITING *
+***************************/
+
+details {
+  margin: 0 auto ;
+  background: #282828;
+  margin-bottom: .5rem;
+  box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+summary {
+  padding: 1rem;
+  display: block;
+  background: #333;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+/* THE MAGIC 🧙‍♀️ */
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+/***************************
+* DETAILS FINISHED EDITING *
+****************************/
+
+/***************************
+* NOTICIES STARTED EDITING *
+****************************/
+
+.content .notices {
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden; }
+
+.content .notices p {
+  padding: 10px;
+  margin-bottom: 0; }
+
+.content .notices p::before {
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  font-family: "themify";
+  font-weight: 900;
+  content: "\e717";
+  left: 10px; }
+
+.content .notices.note p {
+  border-top: 30px solid #6ab0de;
+  background: #1D1C21; }
+
+.content .notices.note p::after {
+  content: 'Note';
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  left: 2rem; }
+
+.content .notices.tip p {
+  border-top: 30px solid #78C578;
+  background: #1D1C21; }
+
+.content .notices.tip p::after {
+  content: 'Tip';
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  left: 2rem; }
+
+.content .notices.info p {
+  border-top: 30px solid #F0B37E;
+  background: #1D1C21; }
+
+.content .notices.info p::after {
+  content: 'Info';
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  left: 2rem; }
+
+.content .notices.warning p {
+  border-top: 30px solid #E06F6C;
+  background: #1D1C21; }
+
+.content .notices.warning p::after {
+  content: 'Warning';
+  position: absolute;
+  top: 2px;
+  color: #fff;
+  left: 2rem; }
+
+/****************************
+* NOTICIES FINISHED EDITING *
+*****************************/
+
+/*****************************
+* BLOCKQUOTE STARTED EDITING *
+*****************************/
+
+.content blockquote {
+  font-size: 20px !important;
+  color: #B0B0B0;
+  padding: 20px 40px;
+  border-left: 2px solid #E4112F;
+  margin: 40px 0;
+  font-weight: bold;
+  background: #1D1C21; }
+  .content blockquote p {
+    margin-bottom: 0 !important; }
+
+/******************************
+* BLOCKQUOTE FINISHED EDITING *
+******************************/
 
 /************************
 * OTHER STARTED EDITING *
@@ -1145,9 +1290,9 @@ pre code {
   display: inline-block;
   padding: 0 20px;
   font-size: 14px;
-  color: #fff;
-  background: #222;
   border: 2px solid #555;
+  color: #fff;
+  background: #fff;
   text-decoration: none;
   border-radius: 0;
   transition-property: background-color;
@@ -1157,9 +1302,9 @@ pre code {
 }
 .btn:hover,
 .post-more-link .btn:hover {
-  border-color: #222;
-  color: #fff;
-  background: #222;
+  background: #CC6666;
+  color: #555;
+  border-color: #555;
 }
 .btn-bar {
   display: block;
@@ -1206,7 +1351,7 @@ pre code {
 .pagination .prev:hover,
 .pagination .next:hover,
 .pagination .page-number:hover {
-  border-top-color: #222;
+  background-color: #CC6666;
 }
 .pagination .space {
   padding: 0;
@@ -1410,10 +1555,6 @@ pre code {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
 }
-.menu .menu-item a:hover,
-.menu-item-active a {
-  border-bottom-color: #222;
-}
 .menu .menu-item .fa {
   margin-right: 5px;
 }
@@ -1591,6 +1732,9 @@ pre code {
   line-height: 1.2;
   vertical-align: top;
 }
+.post-title-link:hover {
+  color: #CC6666;
+}
 .posts-expand .post-title-link::before {
   content: "";
   position: absolute;
@@ -1598,7 +1742,7 @@ pre code {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #CC6666;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -1708,7 +1852,7 @@ pre code {
   border-bottom: none;
 }
 .post-nav-item a:hover {
-  color: #222;
+  color: #CC6666;
   border-bottom: none;
 }
 .post-nav-item a:active {
@@ -2255,7 +2399,7 @@ a.search-result {
   height: 80%;
   margin-left: -350px;
   padding: 3px 0 0 10px;
-  background-color: #4A4B4D;
+  background: #1D1C21;
   color: #333;
   z-index: 9999;
   border-radius: 5px;
@@ -2487,9 +2631,6 @@ a.search-result {
 .page-post-detail .comments {
   overflow: hidden;
 }
-body {
-  background: #f5f7f9;
-}
 @media (min-width: 992px) {
   .full-image.full-image.full-image {
     max-width: none;
@@ -2518,7 +2659,6 @@ body {
   overflow: hidden;
   padding: 0;
   width: 240px;
-  background-color: #231F20;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
@@ -2542,7 +2682,6 @@ body {
   box-sizing: border-box;
   padding: 40px;
   width: 860px;
-  background-color: #231F20;
   color: #ffffff;
   min-height: 700px;
 }
@@ -2595,7 +2734,6 @@ body {
 .site-meta {
   padding: 20px 0;
   color: #fff;
-  background: #222;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
@@ -2649,11 +2787,6 @@ body {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
-}
-.menu .menu-item a:hover,
-.menu-item-active a {
-  background: #f9f9f9;
-  border-bottom-color: #fff;
 }
 .menu .menu-item br {
   display: none;
@@ -2751,7 +2884,7 @@ body {
 }
 .links-of-author-item a:hover {
   border-radius: 4px;
-  background: #eee;
+  color: #CC6666;
 }
 .links-of-author-item .fa {
   margin-right: 2px;
