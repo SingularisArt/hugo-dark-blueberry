@@ -15,7 +15,15 @@
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    {{ .Summary }}
+      {{ if .Params.cover}}
+        <div class="post-body" itemprop="articleBody">
+          <img src="{{ .Params.cover }}" alt="">
+        </div>
+      {{ else }}
+        <div class="post-body" itemprop="articleBody">
+          {{ .Summary }}
+        </div>
+      {{ end }}
     </div>
     {{ if .Truncated }}
     <div class="post-more-link text-center">

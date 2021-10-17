@@ -5,26 +5,28 @@
     <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
   </div>
 </div>
+
 <aside id="sidebar" class="sidebar">
-  <div class="sidebar-inner">
-{{ if isset .Params "toc" }}
-  <ul class="sidebar-nav motion-element">
-    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-<<<<<<< HEAD
-      Table of Contents
-    </li>
-    <li class="sidebar-nav-overview" data-target="site-overview">
-      <br>
-      Site Information
-=======
-      <br>Table of Contents <br>
-    </li>
-    <li class="sidebar-nav-overview" data-target="site-overview">
-      <br>Site Information <br>
->>>>>>> 07b97c83d21e65a50ad1a553f7ad521c0cd30360
-    </li>
-  </ul>
-{{ end }}
+  <div class="sidebar-inner", id="sidebar-inner">
+
+    {{ if .Params.toc }}
+      <ul class="sidebar-nav motion-element" style="display: inline;">
+        <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" style="display: inline;" >
+          {{ i18n "ToC" }} <br/>
+        </li>
+
+        <li class="sidebar-nav-overview" data-target="site-overview" style="display: inline;">
+          {{ i18n "SiteInfo" }} <br/>
+        </li>
+      </ul>
+    {{ else }}
+      <ul class="sidebar-nav motion-element" style="display: inline;">
+        <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" style="display: inline;" >
+          <br/>
+        </li>
+      </ul>
+    {{ end }}
+
     <section class="site-overview sidebar-panel {{ if not (isset .Params "toc") }} sidebar-panel-active {{ end }}">
       {{ partial "sidebar/author.html" . }}
       {{ partial "sidebar/state.html" . }}
@@ -32,6 +34,7 @@
       {{ partial "sidebar/social.html" . }}
       {{ partial "sidebar/link.html" . }}
     </section>
+
     {{ partial "sidebar/toc.html" . }}
   </div>
 </aside>

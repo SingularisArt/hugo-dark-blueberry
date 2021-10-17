@@ -27,7 +27,7 @@
         </div>
         <div class="tag-cloud-tags">
             {{ range $name, $items := .Site.Taxonomies.tags }}
-             <a href="/tags/{{ $name | urlize | lower  }}" style="font-size: 24.5px; color: #212121">{{ $name }}</a>
+             <a class="center after" href="/tags/{{ $name | urlize | lower  }}" style="font-size: 24.5px;">{{ $name }}</a>
              <span class="tag-list-count"><sup>{{ len $items }}</sup></span>
              {{ end }}
         </div>

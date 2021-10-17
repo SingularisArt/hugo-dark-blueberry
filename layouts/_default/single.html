@@ -9,13 +9,15 @@
         </a>
       </h1>
       <div class="post-meta">
-      {{ partial "post/date.html" .}} 
-      {{ partial "post/category.html" .}}
-      {{ partial "post/readtime.html" .}}
+        {{ partial "post/date.html" .}} 
+        {{ partial "post/category.html" .}}
+        {{ partial "post/tag.html" .}}
+        {{ partial "post/readtime.html" .}}
       </div>
     </header>
+    
     <div class="post-body" itemprop="articleBody">
-    {{ .Content }}
+      {{ .Content }}
     </div>
 
     {{ if .Params.comments }}

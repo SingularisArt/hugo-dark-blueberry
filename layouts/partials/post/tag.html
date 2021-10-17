@@ -1,0 +1,19 @@
+{{ if isset .Params "tags" }}
+  {{ if not (eq (len .Params.tags) 0) }}
+    <span class="post-tag" >
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-folder-o"></i>
+      </span>
+      <span class="post-meta-item-text">{{ i18n "Tag" }}{{ i18n "Colon"}}</span>
+      {{ range .Params.tags }}
+        <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+          <a href="/categories/{{ . | urlize }}" itemprop="url" rel="index">
+            <span itemprop="name">{{ . }}</span>
+          </a>
+          &nbsp; 
+        </span>
+      {{ end }}
+    </span>
+  {{ end }}
+{{ end }}
