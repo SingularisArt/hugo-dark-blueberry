@@ -2,3 +2,7 @@
   DateFormat = "2006-01-02"
   YearFormat = "2006"
   MonthFormat = "01-02"
+  AuthorImg = "/img/avatar.png"
+  Author = "Hashem A. Damrah"
+  introduce = "hello"
+  description = "My diverse website"
