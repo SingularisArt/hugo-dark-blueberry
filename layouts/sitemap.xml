@@ -1,7 +1,7 @@
 <search>
     {{range where .Site.RegularPages "Section" "post"}}
      <entry>
-        <title>{{ .Title }}</title>
+        <title>{{ .Site.Params.title }}</title>
         <url>{{ .Permalink }}</url>
         <categories>
           {{ range .Params.categories }}<category>{{ . }}</category>{{ end }}

@@ -49,11 +49,15 @@
           </a>
         </h1>
 
-        <h4 style="text-align: center; font-style: italic; color: #555;" class="author">By: {{ .Params.Author }}</h4>
+        {{ if .Params.author }}
+          <h4 style="text-align: center; font-style: italic; color: #555;" class="author">By: {{ .Params.author }}</h4>
+        {{ end }}
 
-        <p style="text-align: center; color: #555;">
-            Description: {{ .Params.description | safeHTML }}
-        </p>
+        {{ if .Params.description }}
+          <p style="text-align: center; color: #555;">
+              Description: {{ .Params.description | safeHTML }}
+          </p>
+        {{ end }}
 
         <div class="post-meta">
           {{ partial "post/date.html" .}} 
@@ -69,6 +73,9 @@
 
       {{ if .Params.comments }}
         {{ partial "comments.html" . }}
+      {{ else }}
+        <br>
+        <div style="background-color: #CC6666;" align="center">Disqus Comments Disabled</div> 
       {{ end }}
       
       <footer class="post-footer">

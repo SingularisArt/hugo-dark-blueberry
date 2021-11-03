@@ -44,11 +44,15 @@
 
             <br>
 
-            <h1 style="text-align: center;" class="author">{{ .Site.Params.Author }}</h1>
+            {{ if .Site.Params.author }}
+                <h1 style="text-align: center;" class="author">{{ .Site.Params.author }}</h1>
+            {{ end }}
 
-            <p style="text-align: center;">
-                {{ .Site.Params.description | safeHTML }}
-            </p>
+            {{ if .Site.Params.description }}
+                <p style="text-align: center;">
+                    {{ .Site.Params.description | safeHTML }}
+                </p>
+            {{ end }}
         </div>
     </div>
 {{ end }}
