@@ -28,5 +28,14 @@
     sidebar: {"position":"left","display":"post"},
     {{ if and .Site.Params.Fancybox .IsPage}} fancybox: true, {{else }}fancybox: false, {{ end }}
   };
-</script>
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9G7LLF1FQB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9G7LLF1FQB');
+  </script>
 </head>
