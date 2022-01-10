@@ -58,4 +58,3 @@ $(document).ready(function () {
   toc($t, "");
 });
 
-
