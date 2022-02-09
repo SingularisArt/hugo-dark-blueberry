@@ -4,7 +4,7 @@
 
 body {
   position: relative;
-  font-family: "Arial";
+  font-family: "Inter", "sans-serif";
   font-size: 14px;
   line-height: 2;
   color: #8a8a8a;
@@ -1095,11 +1095,13 @@ details[open] > summary {
 .content .notices {
   margin: 2rem 0;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .content .notices p {
   padding: 10px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .content .notices p::before {
   position: absolute;
@@ -1108,7 +1110,8 @@ details[open] > summary {
   font-family: "themify";
   font-weight: 900;
   content: "\e717";
-  left: 10px; }
+  left: 10px;
+}
 
 .content .notices.note p {
   border-top: 30px solid #6ab0de;
@@ -2787,6 +2790,11 @@ a.search-result {
   background: #fff;
   box-shadow: none;
 }
+
+.content {
+  font-family: "Inter", "sans-serif";
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar {
     display: none;
@@ -3013,3 +3021,4 @@ a.search-result {
     text-align: justify;
   }
 }
+
