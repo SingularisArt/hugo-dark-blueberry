@@ -3022,3 +3022,18 @@ a.search-result {
   }
 }
 
+@each $alert_name, $alert_theme in $alert_map {
+    $alert_back_temp: lshift_main(map-get($theme_map, $alert_theme), $alert_back_lshift, $alert_back_lshift);
+    $alert_border_temp: lshift_main($alert_back_temp, $alert_border_lshift, $alert_border_lshift);
+
+    .alert-#{$alert_name} {
+        background-color: $alert_back_temp !important;
+        border-color: $alert_border_temp !important;
+        color: transparentize(
+				hsl(hue($alert_back_temp),
+					saturation($alert_back_temp),
+					lightness($alert_body_text_color)
+					),
+				opacity($alert_body_text_color) / 100)  !important;
+    }
+}
