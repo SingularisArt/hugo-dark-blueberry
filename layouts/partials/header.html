@@ -7,6 +7,7 @@
 
     gtag('config', 'G-9G7LLF1FQB');
   </script>
+  {{ if .Params.mathjax }}{{ partial "mathjax_support.html" . }}{{ end }}
 </head>
 
 <div class="site-meta {{ if .Site.Params.ImgLogo }} custom-logo {{ end }}">
