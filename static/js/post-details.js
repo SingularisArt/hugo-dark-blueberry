@@ -134,6 +134,7 @@ $(document).ready(function () {
     if (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always') {
       if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
         NexT.utils.displaySidebar();
+        console.log($tocContent)
       }
     }
   };
