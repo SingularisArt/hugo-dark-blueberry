@@ -18,7 +18,6 @@ $(document).ready(function() {
       async: true,
       success: function(xmlResponse) {
         // get the contents from search data
-        console.log("xxxx");
         isfetched = true;
         $('.popup').detach().appendTo('.header-inner');
         var datas = $("entry", xmlResponse).map(function() {
@@ -106,7 +105,6 @@ $(document).ready(function() {
 
   // handle and trigger popup window;
   $('.popup-trigger').click(function(e) {
-    console.log("isfetched", isfetched);
     e.stopPropagation();
     if (isfetched == false) {
       searchFunc(path, 'local-search-input', 'local-search-result');
