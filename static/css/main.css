@@ -3,13 +3,13 @@
 ************************/
 
 body {
-  position: relative;
-  font-family: 'Inter', 'sans-serif';
-  font-size: 14px;
-  line-height: 2;
-  color: #8a8a8a;
-  background-color: #1a191e;
-  margin: 0;
+  font-family: Inter, sans-serif;
+  text-rendering: optimizelegibility;
+  line-height: 1.4;
+  background-color: rgb(255, 255, 255);
+  color: rgb(58, 52, 58);
+  font-size: 18px;
+  text-rendering: optimizelegibility;
 }
 
 @media (max-width: 767px) {
@@ -644,11 +644,11 @@ dd {
   box-sizing: border-box;
   width: 240px;
   color: #555;
-  background-color: #1a191e;
+  background-color: rgb(255, 255, 255);
 }
 
 .sidebar-inner.affix {
-  background-color: #1a191e;
+  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
 }
@@ -829,11 +829,11 @@ dd {
   background-color: #eff2f3;
 }
 
-.highlight .code pre {
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #f7f7f7;
-}
+/* .highlight .code pre { */
+/*   padding-left: 10px; */
+/*   padding-right: 10px; */
+/*   background-color: #f7f7f7; */
+/* } */
 
 .highlight .line {
   height: 20px;
@@ -972,7 +972,7 @@ pre,
 
 .main {
   padding-bottom: 150px;
-  background-color: #1a191e;
+  background-color: rgb(255, 255, 255);
 }
 
 .main-inner {
@@ -1438,17 +1438,24 @@ pre .javascript .function {
 
 pre,
 code {
-  font-family: 'PT Mono', consolas, Menlo, 'PingFang SC', 'Microsoft YaHei',
-    monospace;
+  font-family: Iosevka Web,"monospace";
 }
 
 code {
-  padding: 2px 4px;
-  word-break: break-all;
-  color: #555;
-  background: #eee;
-  border-radius: 4px;
-  font-size: 13px;
+  /* padding: 2px 4px; */
+  /* word-break: break-all; */
+  /* color: #2e3440; */
+  /* background-color: #eceff4; */
+  /* border-radius: 4px; */
+  /* font-size: 13px; */
+  background: #eceff4;
+  border-radius: 3px;
+  color: #2e3440;
+  font-family: Iosevka Web,"monospace";
+  font-size: 90%;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  padding: 0.05em 0.4em;
 }
 pre code {
   padding: 0;
@@ -2913,7 +2920,7 @@ a.search-result {
   min-height: 700px;
 }
 .custom-logo-site-title {
-  background-color: #1a191e;
+  background-color: rgb(255, 255, 255);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
