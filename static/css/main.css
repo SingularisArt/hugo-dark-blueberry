@@ -1720,6 +1720,9 @@ pre code {
   position: relative;
   top: -10px;
 }
+.site-nav {
+  background-color: #8a8a8a;
+}
 .site-nav-toggle {
   display: none;
   position: absolute;
@@ -2271,8 +2274,8 @@ pre code {
   border-bottom-color: #ccc;
 }
 .post-toc ul a:hover {
-  color: #000;
-  border-bottom-color: #000;
+  color: #fff;
+  border-bottom-color: #fff;
 }
 .post-toc li {
   overflow: hidden;
