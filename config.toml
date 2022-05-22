@@ -35,7 +35,6 @@ pygmentsCodefencesGuessSyntax = true
 
   title = "Hashem A. Damrah"
   subtitle = ""
-  #copyright = "Made with Hugo. Deployed by Netlify. Comments made with Disqus."
 
   logoText = "Hashem A. Damrah"
   logoHomeLink = "/post"

@@ -10,7 +10,7 @@
   {{ if .Params.mathjax }}{{ partial "mathjax_support.html" . }}{{ end }}
 </head>
 
-<div class="site-meta {{ if .Site.Params.ImgLogo }} custom-logo {{ end }}">
+<div class="site-meta {{ if .Site.Params.ImgLogo }} custom-logo {{ end }}" style="background-color: #1a191e">
 
   <div class="custom-logo-site-title">
     <a href="{{ .Site.BaseURL }}"  class="brand" rel="start">

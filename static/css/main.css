@@ -2907,8 +2907,10 @@ a.search-result {
   box-sizing: border-box;
   padding: 40px;
   width: 860px;
-  color: #ffffff;
   min-height: 700px;
+}
+.custom-logo-site-title {
+  background-color: #1a191e;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
@@ -3044,6 +3046,7 @@ a.search-result {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .site-nav-toggle {
+    background-color: #ffffff;
     display: block;
   }
 }
