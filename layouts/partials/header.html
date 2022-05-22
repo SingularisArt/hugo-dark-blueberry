@@ -11,7 +11,6 @@
 </head>
 
 <div class="site-meta {{ if .Site.Params.ImgLogo }} custom-logo {{ end }}">
-
   <div class="custom-logo-site-title">
     <a href="{{ .Site.BaseURL }}" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
@@ -22,7 +21,7 @@
   <p class="site-subtitle">{{ with .Site.Params.subtitle }}{{ . }}{{ end }}</p>
 </div>
 
-<div class="site-nav-toggle">
+<div class="site-nav-toggle" style="background-color: #cc6666;">
   <button>
     <span class="btn-bar"></span>
     <span class="btn-bar"></span>

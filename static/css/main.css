@@ -6,10 +6,7 @@ body.dark-mode,
 body.dark-mode main * {
   --bg-color: #1a191e;
   --clr: #f5f5f5;
-}
-
-element {
-  --bg-color: #405580;
+  --site-nav: #cc6666;
 }
 
 body {
@@ -1541,7 +1538,7 @@ pre code {
   display: block;
   width: 22px;
   height: 2px;
-  background: #555;
+  color: #000;
   border-radius: 1px;
 }
 .btn-bar + .btn-bar {
@@ -1681,6 +1678,7 @@ pre code {
   background: #222;
 }
 .site-meta {
+  background-color: var(--site-meta);
   margin: 0;
   text-align: center;
 }
@@ -1747,8 +1745,8 @@ pre code {
 .site-nav-toggle button {
   margin-top: 2px;
   padding: 9px 10px;
-  background: #cc6666;
-  border: none;
+  background: var(--site-nav);
+  border: 1px;
 }
 @media (max-width: 767px) {
   .site-nav {
@@ -3049,7 +3047,7 @@ a.search-result {
 }
 
 .btn-bar {
-  background-color: var(--bg-color);
+  background-color: #000;
 }
 
 .site-nav-toggle {
