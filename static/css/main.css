@@ -2,12 +2,22 @@
 * BASIC STARTED EDITING *
 ************************/
 
+body.dark-mode, 
+body.dark-mode main * {
+  --bg-color: #1a191e;
+  --clr: #f5f5f5;
+}
+
+element {
+  --bg-color: #405580;
+}
+
 body {
-  color: rgb(58, 52, 58);
+  color: var(--clr);
   font-family: Inter, sans-serif;
   text-rendering: optimizelegibility;
   line-height: 1.4;
-  background-color: #fff;
+  background-color: var(--bg-color);
   font-size: 18px;
 }
 
@@ -643,11 +653,11 @@ dd {
   box-sizing: border-box;
   width: 240px;
   color: #555;
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 
 .sidebar-inner.affix {
-  background-color: #fff;
+  background-color: var(--bg-color);
   position: fixed;
   top: 0;
 }
@@ -715,7 +725,7 @@ dd {
   vertical-align: top;
   height: 2px;
   width: 100%;
-  background: #fff;
+  background: var(--bg-color);
   margin-top: 3px;
 }
 
@@ -892,7 +902,7 @@ pre,
 }
 
 .header {
-  background: #fff;
+  background: var(--bg-color);
 }
 
 .header-inner {
@@ -946,7 +956,7 @@ pre,
   margin-left: -4px;
   background: #bbb;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 1px solid var(--bg-color);
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
@@ -971,7 +981,7 @@ pre,
 
 .main {
   padding-bottom: 150px;
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 
 .main-inner {
@@ -1105,7 +1115,7 @@ section {
   max-width: var(--sectionWidth);
   margin: 40px auto;
   width: 97%;
-  color: rgb(58, 52, 58);
+  color: var(--clr);
 }
 
 summary {
@@ -1239,53 +1249,53 @@ details[open] > summary {
 
 .content .notices.note p {
   border-top: 30px solid #6ab0de;
-  background: #fff;
+  background: var(--bg-color);
 }
 
 .content .notices.note p::after {
   content: 'Note';
   position: absolute;
   top: 2px;
-  color: #fff;
+  color: var(--bg-color);
   left: 2rem;
 }
 
 .content .notices.tip p {
   border-top: 30px solid #78c578;
-  background: #fff;
+  background: var(--bg-color);
 }
 
 .content .notices.tip p::after {
   content: 'Tip';
   position: absolute;
   top: 2px;
-  color: #fff;
+  color: var(--bg-color);
   left: 2rem;
 }
 
 .content .notices.info p {
   border-top: 30px solid #f0b37e;
-  background: #fff;
+  background: var(--bg-color);
 }
 
 .content .notices.info p::after {
   content: 'Info';
   position: absolute;
   top: 2px;
-  color: #fff;
+  color: var(--bg-color);
   left: 2rem;
 }
 
 .content .notices.warning p {
   border-top: 30px solid #e06f6c;
-  background: #fff;
+  background: var(--bg-color);
 }
 
 .content .notices.warning p::after {
   content: 'Warning';
   position: absolute;
   top: 2px;
-  color: #fff;
+  color: var(--bg-color);
   left: 2rem;
 }
 
@@ -1304,7 +1314,7 @@ details[open] > summary {
   border-left: 2px solid #e4112f;
   margin: 40px 0;
   font-weight: bold;
-  background: #fff;
+  background: var(--bg-color);
 }
 .content blockquote p {
   margin-bottom: 0 !important;
@@ -1721,7 +1731,7 @@ pre code {
   top: -10px;
 }
 .site-nav {
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 .site-nav-toggle {
   display: none;
@@ -2627,7 +2637,7 @@ a.search-result {
   height: 80%;
   margin-left: -350px;
   padding: 3px 0 0 10px;
-  background: #fff;
+  background: var(--bg-color);
   color: #333;
   z-index: 9999;
   border-radius: 5px;
@@ -2913,7 +2923,7 @@ a.search-result {
   min-height: 700px;
 }
 .custom-logo-site-title {
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
@@ -2933,7 +2943,7 @@ a.search-result {
   float: left;
   margin-top: 300px;
   width: 240px;
-  background: #fff;
+  background: var(--bg-color);
   box-shadow: none;
 }
 
@@ -2968,7 +2978,7 @@ a.search-result {
 }
 .site-meta {
   padding: 20px 0;
-  color: #fff;
+  color: var(--bg-color);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
@@ -3039,7 +3049,7 @@ a.search-result {
 }
 
 .btn-bar {
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 
 .site-nav-toggle {
@@ -3177,8 +3187,4 @@ code.has-jax {
   background: inherit !important;
   border: none !important;
   font-size: 100%;
-}
-
-body {
-  color: rgb(58, 52, 58);
 }

@@ -1,4 +1,6 @@
 <div class="sidebar-toggle">
+
+  {{ partial "theme_switcher.html" .}}
   <div class="sidebar-toggle-line-wrap">
     <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
     <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
@@ -32,6 +34,7 @@
       {{ partial "sidebar/rss.html" . }}
       {{ partial "sidebar/social.html" . }}
       {{ partial "sidebar/link.html" . }}
+      {{ partial "sidebar/theme_switcher.html" . }}
     </section>
 
     {{ partial "sidebar/toc.html" . }}
