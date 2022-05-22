@@ -3,13 +3,12 @@
 ************************/
 
 body {
+  color: rgb(58, 52, 58);
   font-family: Inter, sans-serif;
   text-rendering: optimizelegibility;
   line-height: 1.4;
-  background-color: rgb(255, 255, 255);
-  color: rgb(58, 52, 58);
+  background-color: #fff;
   font-size: 18px;
-  text-rendering: optimizelegibility;
 }
 
 @media (max-width: 767px) {
@@ -644,11 +643,11 @@ dd {
   box-sizing: border-box;
   width: 240px;
   color: #555;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 }
 
 .sidebar-inner.affix {
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   position: fixed;
   top: 0;
 }
@@ -829,11 +828,11 @@ dd {
   background-color: #eff2f3;
 }
 
-/* .highlight .code pre { */
-/*   padding-left: 10px; */
-/*   padding-right: 10px; */
-/*   background-color: #f7f7f7; */
-/* } */
+.highlight .code pre {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f7f7f7;
+}
 
 .highlight .line {
   height: 20px;
@@ -972,7 +971,7 @@ pre,
 
 .main {
   padding-bottom: 150px;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 }
 
 .main-inner {
@@ -1106,7 +1105,7 @@ section {
   max-width: var(--sectionWidth);
   margin: 40px auto;
   width: 97%;
-  color: #fff;
+  color: rgb(58, 52, 58);
 }
 
 summary {
@@ -1240,7 +1239,7 @@ details[open] > summary {
 
 .content .notices.note p {
   border-top: 30px solid #6ab0de;
-  background: #1d1c21;
+  background: #fff;
 }
 
 .content .notices.note p::after {
@@ -1253,7 +1252,7 @@ details[open] > summary {
 
 .content .notices.tip p {
   border-top: 30px solid #78c578;
-  background: #1d1c21;
+  background: #fff;
 }
 
 .content .notices.tip p::after {
@@ -1266,7 +1265,7 @@ details[open] > summary {
 
 .content .notices.info p {
   border-top: 30px solid #f0b37e;
-  background: #1d1c21;
+  background: #fff;
 }
 
 .content .notices.info p::after {
@@ -1279,7 +1278,7 @@ details[open] > summary {
 
 .content .notices.warning p {
   border-top: 30px solid #e06f6c;
-  background: #1d1c21;
+  background: #fff;
 }
 
 .content .notices.warning p::after {
@@ -1305,7 +1304,7 @@ details[open] > summary {
   border-left: 2px solid #e4112f;
   margin: 40px 0;
   font-weight: bold;
-  background: #1d1c21;
+  background: #fff;
 }
 .content blockquote p {
   margin-bottom: 0 !important;
@@ -1442,12 +1441,6 @@ code {
 }
 
 code {
-  /* padding: 2px 4px; */
-  /* word-break: break-all; */
-  /* color: #2e3440; */
-  /* background-color: #eceff4; */
-  /* border-radius: 4px; */
-  /* font-size: 13px; */
   background: #eceff4;
   border-radius: 3px;
   color: #2e3440;
@@ -1690,7 +1683,7 @@ pre code {
   position: relative;
   display: inline-block;
   padding: 0 40px;
-  color: #fff;
+  color: #8a8a8a;
   background: #222;
   border-bottom: none;
 }
@@ -1728,7 +1721,7 @@ pre code {
   top: -10px;
 }
 .site-nav {
-  background-color: #8a8a8a;
+  background-color: #fff;
 }
 .site-nav-toggle {
   display: none;
@@ -1744,7 +1737,7 @@ pre code {
 .site-nav-toggle button {
   margin-top: 2px;
   padding: 9px 10px;
-  background: transparent;
+  background: #cc6666;
   border: none;
 }
 @media (max-width: 767px) {
@@ -2281,8 +2274,8 @@ pre code {
   border-bottom-color: #ccc;
 }
 .post-toc ul a:hover {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #000;
+  border-bottom-color: #000;
 }
 .post-toc li {
   overflow: hidden;
@@ -2634,7 +2627,7 @@ a.search-result {
   height: 80%;
   margin-left: -350px;
   padding: 3px 0 0 10px;
-  background: #1d1c21;
+  background: #fff;
   color: #333;
   z-index: 9999;
   border-radius: 5px;
@@ -2920,7 +2913,7 @@ a.search-result {
   min-height: 700px;
 }
 .custom-logo-site-title {
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
@@ -2993,7 +2986,7 @@ a.search-result {
   background: none;
 }
 .brand:hover {
-  color: #fff;
+  color: #000;
 }
 .site-subtitle {
   margin: 0;
@@ -3184,4 +3177,8 @@ code.has-jax {
   background: inherit !important;
   border: none !important;
   font-size: 100%;
+}
+
+body {
+  color: rgb(58, 52, 58);
 }
