@@ -5,7 +5,7 @@
 body.dark-mode, 
 body.dark-mode main * {
   --bg-color: #1a191e;
-  --clr: #f5f5f5;
+  --clr: #fff;
   --site-nav: #cc6666;
 }
 
@@ -13,7 +13,7 @@ body {
   color: var(--clr);
   font-family: Inter, sans-serif;
   text-rendering: optimizelegibility;
-  line-height: 1.4;
+  line-height: 1.4em;
   background-color: var(--bg-color);
   font-size: 18px;
 }
@@ -2627,6 +2627,7 @@ a.search-result {
   overflow: auto;
 }
 .popup {
+  background-color: #a9a9a9;
   display: none;
   position: fixed;
   top: 10%;
@@ -2635,7 +2636,6 @@ a.search-result {
   height: 80%;
   margin-left: -350px;
   padding: 3px 0 0 10px;
-  background: var(--bg-color);
   color: #333;
   z-index: 9999;
   border-radius: 5px;

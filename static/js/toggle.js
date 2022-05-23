@@ -9,7 +9,9 @@ switcher.addEventListener("click", function() {
     localStorage.setItem('darkMode', 'true')
   } else {
     body.classList.remove('dark-mode')
-    setTimeout(function() { localStorage.removeItem('darkMode') }, 100)
+    setTimeout(function() {
+      localStorage.removeItem('darkMode')
+    }, 100)
   }
 })
 
