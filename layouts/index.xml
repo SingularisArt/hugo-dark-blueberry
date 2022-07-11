@@ -1,15 +1,33 @@
-<search>
-  {{range where .Site.RegularPages "Section" "post"}}
-    <entry>
-      <title>{{ .Title }}</title>
-      <url>{{ .Permalink }}</url>
-      <categories>
-        {{ range .Params.categories }}<category>{{ . }}</category>{{ end }}
-      </categories>
-      <tags>
-        {{ range .Params.tags }}<tag>{{ . }}</tag>{{ end }}
-      </tags>
-      <content type="html"> {{ .Content | plainify }}</content>
-    </entry>
-  {{ end }}
-</search>
+<!-- <search> -->
+<!--   {{range where .Site.RegularPages "Section" "post"}} -->
+<!--     <entry> -->
+<!--       <title>{{ .Title }}</title> -->
+<!--       <url>{{ .Permalink }}</url> -->
+<!--       <categories> -->
+<!--         {{ range .Params.categories }}<category>{{ . }}</category>{{ end }} -->
+<!--       </categories> -->
+<!--       <tags> -->
+<!--         {{ range .Params.tags }}<tag>{{ . }}</tag>{{ end }} -->
+<!--       </tags> -->
+<!--       <content type="html"> {{ .Content | plainify }}</content> -->
+<!--     </entry> -->
+<!--   {{ end }} -->
+<!-- </search> -->
+
+<rss version="2.0">
+  <channel>
+    {{range where .Site.RegularPages "Section" "post"}}
+      <entry>
+        <title>{{ .Title }}</title>
+        <url>{{ .Permalink }}</url>
+        <categories>
+          {{ range .Params.categories }}<category>{{ . }}</category>{{ end }}
+        </categories>
+        <tags>
+          {{ range .Params.tags }}<tag>{{ . }}</tag>{{ end }}
+        </tags>
+        <content type="html"> {{ .Content | plainify }}</content>
+      </entry>
+    {{ end }}
+  </channel>
+</rss>
