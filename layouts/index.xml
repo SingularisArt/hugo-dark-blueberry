@@ -5,7 +5,7 @@
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <author>{{ .Params.author }}</author>
-      <pubDate>{{ Params.date }}</pubDate>
+      <pubDate>{{ .Params.date }}</pubDate>
       <description>{{ .Params.description }}</description>
       <introduction>{{ .Params.introduction }}</introduction>
       <categories>
